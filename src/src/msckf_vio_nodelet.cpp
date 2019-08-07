@@ -6,7 +6,7 @@
  */
 
 #include <msckf_vio/msckf_vio_nodelet.h>
-
+   
 namespace msckf_vio {
 void MsckfVioNodelet::onInit() {
   msckf_vio_ptr.reset(new MsckfVio(getPrivateNodeHandle()));
@@ -21,4 +21,3 @@ PLUGINLIB_EXPORT_CLASS(msckf_vio::MsckfVioNodelet,
     nodelet::Nodelet);
 
 } // end namespace msckf_vio
-
